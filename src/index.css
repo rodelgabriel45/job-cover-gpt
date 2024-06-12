@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#cover-letter::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+#cover-letter::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+#cover-letter::-webkit-scrollbar-thumb {
+  background: #211522; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+#cover-letter::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar thumb when hovered */
+}
+
+/* For Firefox */
+#cover-letter {
+  scrollbar-width: thin; /* Sets the width of the scrollbar */
+  scrollbar-color: #3d5b59 #211522; /* Sets the color of the thumb and track respectively */
+}
