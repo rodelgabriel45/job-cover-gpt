@@ -30,7 +30,8 @@ const useSubmitForm = (formData) => {
       Company: ${formData.company}
       Location: ${formData.location}
       Job Description: ${formData.description}
-      skills: ${formData.skills}  
+      skills: ${formData.skills}
+      Experience: ${formData.experience}
       `;
 
     const payload = {
@@ -39,7 +40,7 @@ const useSubmitForm = (formData) => {
         {
           role: 'system',
           content:
-            'You will be provided with an object data containing { job, company, location, jobDescription, skills }. Your task is to make a cover letter based on this data.',
+            'You will be provided with an object data containing { job, company, location, jobDescription, skills, and experience }. Your task is to make a cover letter based on this data.',
         },
         {
           role: 'user',

@@ -90,9 +90,12 @@ const UserForm = ({
         </div>
 
         <textarea
+          id='experience'
           className='textarea w-full resize-none'
           rows={6}
           placeholder='Enter your experience...'
+          onChange={(e) => onChangeInput(e)}
+          required
         ></textarea>
 
         <button disabled={loading} className='btn btn-ghost btn-lg'>

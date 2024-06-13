@@ -21,6 +21,8 @@ function App() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
+  console.log(formData);
+
   const handleEnteredSkillsChange = (e) => {
     setEnteredSkills(e.target.value);
   };
