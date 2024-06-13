@@ -66,7 +66,7 @@ const UserForm = ({
             className='input input-bordered py-5 w-full xl:py-7'
             onChange={(e) => onInputSkill(e)}
           />
-          <ul className='list-disc text-md flex flex-wrap mt-3 ml-5 justify-start items-center gap-10'>
+          <ul className='list-disc text-[1rem] flex flex-wrap mt-3 ml-5 justify-start items-center gap-10'>
             {formData?.skills?.map((skill, index) => (
               <li key={index}>{skill}</li>
             ))}
