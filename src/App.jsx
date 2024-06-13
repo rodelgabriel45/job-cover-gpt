@@ -21,8 +21,6 @@ function App() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
 
-  console.log(formData);
-
   const handleEnteredSkillsChange = (e) => {
     setEnteredSkills(e.target.value);
   };
@@ -81,6 +79,32 @@ function App() {
           </div>
         </div>
       </dialog>
+
+      <div className='flex flex-col justify-center items-center text-lg py-14 border-t-8 rounded-md border-teal-950 bg-gray-800'>
+        <p>&copy; 2024. All rights reserved.</p>
+        <p>
+          Built with ♥ by{' '}
+          <a
+            href='https://rodel-gabriel.onrender.com/'
+            className='text-blue-400 hover:underline'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Rodel Gabriel
+          </a>
+        </p>
+        <p>
+          <a
+            href='https://platform.openai.com/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Integrated with{' '}
+            <span className='text-blue-400 hover:underline'>OpenAI</span>
+          </a>
+        </p>
+      </div>
+
       <Toaster />
     </>
   );

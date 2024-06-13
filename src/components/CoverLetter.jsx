@@ -8,7 +8,7 @@ const CoverLetter = ({ coverLetter, onBackToForm }) => {
       <textarea
         id='cover-letter'
         defaultValue={coverLetter}
-        className='w-full rounded-md drop-shadow-lg h-[30rem] lg:w-1/3 lg:gap-10 lg:h-[50rem] lg:text-2xl bg-[#31352E] p-6 resize-none text-xl'
+        className='w-full rounded-md drop-shadow-lg h-[30rem] lg:w-1/2 lg:gap-10 lg:h-[50rem] lg:text-2xl bg-[#31352E] p-6 resize-none text-xl'
       />
       <button
         className='btn btn-ghost btn-lg'

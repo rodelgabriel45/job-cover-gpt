@@ -17,7 +17,7 @@ const UserForm = ({
       </h1>
       <form
         onSubmit={onSubmit}
-        className='flex flex-col w-full rounded-md drop-shadow-lg h-auto lg:w-1/3 lg:gap-7 lg:text-2xl bg-[#31352E]  justify-center items-center p-6 gap-4'
+        className='flex flex-col w-full rounded-md drop-shadow-lg h-auto md:w-1/2 xl:w-1/3 lg:gap-7 lg:text-2xl bg-[#31352E]  justify-center items-center p-6 gap-4'
       >
         <h2 className='text-md lg:text-xl'>
           Enter job details to generate a cover letter.
@@ -65,7 +65,6 @@ const UserForm = ({
             placeholder='Skills'
             className='input input-bordered py-5 w-full xl:py-7'
             onChange={(e) => onInputSkill(e)}
-            required
           />
           <ul className='list-disc text-md flex flex-wrap mt-3 ml-5 justify-start items-center gap-10'>
             {formData?.skills?.map((skill, index) => (
@@ -95,7 +94,7 @@ const UserForm = ({
           rows={6}
           placeholder='Enter your experience...'
           onChange={(e) => onChangeInput(e)}
-          required
+          maxLength={200}
         ></textarea>
 
         <button disabled={loading} className='btn btn-ghost btn-lg'>
